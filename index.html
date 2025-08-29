@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Sorting Visualizer</div>
+    <nav>
+      <button id="btn-generate">Generate New Array</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Sorting Visualizer</h1>
+
+    <div class="controls">
+      <button id="btn-bubble">Bubble Sort</button>
+      <button id="btn-selection">Selection Sort</button>
+      <button id="btn-insertion">Insertion Sort</button>
+      <button id="btn-merge">Merge Sort</button>
+      <button id="btn-quick">Quick Sort</button>
+
+      <label for="sizeSlider">Array Size:
+        <input id="sizeSlider" type="range" min="10" max="150" value="50">
+        <span id="sizeValue">50</span>
+      </label>
+
+      <label for="speedSlider">Speed (ms):
+        <input id="speedSlider" type="range" min="5" max="1000" value="200">
+        <span id="speedValue">200 ms</span>
+      </label>
+    </div>
+
+    <div id="array" aria-live="polite"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with passion for DSA Practice | Sorting Visualizer Project</p>
+    <p>&copy; 2025 Dharshan P</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
